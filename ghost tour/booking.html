@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="cal.js"></script>
+    <script src="hamburger.js"></script>
+</head>
+<body>
+
+<!-- Top Navigation Menu -->
+<div class="topnavi-container">
+    <ul class="topnavi">
+        <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
+        <li class="page"><a href="booking.html">Booking</a></li>
+        <li class="page"><a href="about.html">About</a></li>
+        <li class="page"><a href="gallerymaps.html">Gallery</a></li>
+        <li class="page"><a href="gift.html">Giftshop</a></li>
+        <li class="page"><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Booking Form Section -->
+<div class="container">
+    <div class="pages-title">
+        <h1 class="pages-titletext">Book Your Tour</h1>
+    </div>
+</div>
+<div class="column column-2">
+    <div id="booking-cal">
+        <p id="book-text">Book Your Tour</p>
+        <div id="calendar"></div>
+        <input type="date" id="test" />
+        <input type="number" id="people" placeholder="Number of People">
+        <br><br>
+        <label for="language-select">Need an alternate language audio guide?</label>
+        <select name="language">
+            <option value="">--Please choose an option--</option>
+            <option value="en">No thanks!</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="ko">한국어</option>
+            <option value="ar">العربية</option>
+            <option value="ru">Русский</option>
+        </select>
+        <br><br>
+        <label for="accessibility-select">Accessibility Accommodations:</label>
+        <select id="accessibility-select" name="accessibility">
+            <option value="">--Please choose an option--</option>
+            <option value="none">No accommodations needed</option>
+            <option value="wheelchair">Wheelchair accessibility</option>
+            <option value="hearing">Hearing assistance</option>
+            <option value="vision">Vision assistance</option>
+            <option value="mobility">Mobility assistance</option>
+            <option value="other">Other (please specify in comments)</option>
+        </select>
+        <br><br>
+        <label for="referral-source">How did you hear about us?</label>
+        <select id="referral-source" name="referral_source">
+            <option value="">--Please select an option--</option>
+            <option value="internet_search">Internet Search</option>
+            <option value="social_media">Social Media (Facebook, Twitter, Instagram)</option>
+            <option value="friend_referral">Friend or Family Referral</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="event_or_booth">Event or Booth</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Add whatever else you want right here! -->
+
+        <br><br>
+        <label for="label">LABEL TITLE</label>
+        <select name="title">
+            <option value="">--Please select an option--</option>
+            <option value="NAME">OPTION</option>
+            <option value="NAME">OPTION</option>
+            <option value="NAME">OPTION</option>
+            <option value="NAME">OPTION</option>
+            <option value="NAME">OPTION</option>
+            <option value="NAME">OPTION</option>
+        </select>
+
+
+        <textarea id="comments" placeholder="Anything else we should know?"></textarea>
+        <button id="submit-btn">Book Now</button>
+      </div>
+    </div>
+</div>
+<!-- Additional Information Section -->
+<div class="second-container">
+        <h2>Know Before You Go</h2>
+           <ul>
+            <li>Bring comfortable shoes</li>
+            <li>Prepare for rain!</li>
+            <li>etc, etc, ect</li>
+           </ul>
+</div>
+<div class="second-container">
+    <h2>Know Before You Go</h2>
+       <ul>
+        <li>Bring comfortable shoes</li>
+        <li>Prepare for rain!</li>
+        <li>etc, etc, ect</li>
+       </ul>
+</div>
+</body>
+</html>

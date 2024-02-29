@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="cal.js"></script>
-    </head>
+<head>
+    <title>TGT Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="cal.js"></script>
+    <script src="hamburger.js"></script>
+</head>
 <body>
-<!-- add hamburger menu -->
-<ul class="topnavi">
+
+<ul class="topnavi" id="topNav">
     <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
     <li class="page"><a href="booking.html">Booking</a></li>
     <li class="page"><a href="about.html">About</a></li>
-    <li class="page"><a href="gallery.html">Gallery</a></li>
+    <li class="page"><a href="gallerymaps.html">Gallery</a></li>
     <li class="page"><a href="gift.html">Giftshop</a></li>
     <li class="page"><a href="contact.html">Contact</a></li>
- </ul>
+</ul>
+
  
  <div class="container">
     <div class="column column-1">
@@ -21,19 +25,19 @@
     </div>
     <div class="column column-2">
         <div id="calendar-container">
-            <p id="book-text">Book Your Tour</p>
+            <p id="book-text">Get Scared with Us!   </p>
             <div id="calendar"></div>
             <input type="date" id="test" />
             <input type="number" id="people" placeholder="Number of People">
         <textarea id="comments" placeholder="Accomodations? Questions? Concerns?"></textarea>
-            <button id="submit-btn">Book Now</button>
+            <button id="submit-btn"><a href="booking.html">Book Now!</a></button>
           </div>
     </div>
   </div>  
 </div>
 
 <div class="second-container">
-    <h1><i>EXPERIENCE THE THIN VEIL BETWEEN LIFE AND DEATH...</i></h1>
+    <h1><i>A HAUNTED HISTORY EXPERIENCE</i></h1>
     <br>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor felis vel purus sagittis, ut malesuada nisi tempor. 
         Curabitur non turpis non nisi condimentum luctus. Aenean non rhoncus lorem. Integer vulputate pellentesque nisl, vitae aliquet
@@ -44,6 +48,8 @@
          sollicitudin tortor in, tempor mi.<br>
     </p>
     <br>
+    <hr>
+    <img id="banner" src="images/trinity1.png">
     <hr>
     <br>
     <h1><i>TALES FROM THOSE WHO CAME BEFORE...</i></h1>
