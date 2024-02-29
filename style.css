@@ -2,34 +2,30 @@
 @font-face {
     font-family: Hacjiuza, 'Courier New', Courier, monospace;
     src=url (hacjiuza.ttf);
-   }
-   @font-face {
+}
+@font-face {
     font-family: 'HelveticaNeue-LightItalic', Arial, Helvetica, sans-serif;
     src=url (helveticaneue.ttc);
-   }
- 
-
-   /* these changes apply to everything */
+}
+/* these changes apply to everything */
 body {
     background-color: black;
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
-
 p, h1,h2 {
     color: antiquewhite;
 }
-
 /* begin top navigation */
-
 .topnavi{
     padding: 1%;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
+   /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it stays on top of other content */
-    background-color: black; 
+    z-index: 1000;
+   /* Ensure it stays on top of other content */
+    background-color: black;
 }
-
 .topnavi li {
     padding: 5%;
     width: 250px;
@@ -39,17 +35,14 @@ p, h1,h2 {
     flex-wrap: wrap;
     font-size: x-large;
 }
-
 .topnavi a {
     text-decoration: none;
     color: antiquewhite;
 }
-
 .page:hover a {
     background: #6f6fff;
     color: white;
 }
-
 li {
     color: antiquewhite;
 }
@@ -57,33 +50,28 @@ li {
 /* home page sections, from left to right */
 .container {
     display: flex;
-    
-    margin: 20px; 
-    padding: 20px; 
+    margin: 20px;
+    padding: 20px;
 }
-
 .column {
     padding: 20px;
 }
-
 /* left column */
 .column-1{
     flex: 0 0 50%;
     padding-left: 120px;
     background-image: url('images/building.png');
-    background-size: contain; 
+    background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
-
 /* right column */
 .column-2 {
     flex: 0 0 35%;
     padding: 20px;
     margin-left:80px;
 }
-
 /* TGT button */
 #homebutton {
     color: black;
@@ -94,7 +82,6 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 /* title, trinity ghost tours */
 #title {
     padding-left: 10px;
@@ -112,15 +99,13 @@ li {
     text-align: center;
 }
 /* booking info style */
-#book-text
-{
+#book-text {
     margin:auto;
     margin-bottom:20px;
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-size: 50px;
     color:black;
 }
-
 /* booking calendar stuff for homepage */
 #calendar-container {
     max-width: 400px;
@@ -129,30 +114,25 @@ li {
     background-color: antiquewhite;
     padding: 50px;
     border-radius: 5px;
-
-  }
-
+}
 /* this id styles the booking widget ON the booking page */
-  #booking-cal{
+#booking-cal{
     max-width: 70%;
     margin: 0 auto;
     background-color: antiquewhite;
     padding: 100px;
     border-radius: 5px;
-  }
-
-  #calendar {
+}
+#calendar {
     width: 100%;
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-
-  }
-  #people, #comments, #language, #accom{
+}
+#people, #comments, #language, #accom{
     width: 100%;
     padding: 10px;
     margin-top: 20px;
-  }
-
-  #submit-btn {
+}
+#submit-btn {
     width: 50%;
     padding: 20px;
     margin-top: 10%;
@@ -161,54 +141,46 @@ li {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-  }
-  #submit-btn a{
+}
+#submit-btn a{
     color: antiquewhite;
-  }
-  /* end of calendar stuff */
-
-  /* begin bottom half of page */
+}
+/* end of calendar stuff */
+/* begin bottom half of page */
 .second-container p,h1,h2{
     margin-left: 10%;
     margin-right:10%;
 }
-
 .second-container{
-    border: 2px solid antiquewhite; 
-    margin: 20px; 
-    padding: 20px; 
+    border: 2px solid antiquewhite;
+    margin: 20px;
+    padding: 20px;
 }
 .second-container li{
     margin-left: 10%;
     margin-right:10%;
 }
-
-
- /* review area style */
- .reviewcontainer {
-    display: flex; 
-    margin-left: 20px; 
-    padding: 20px; 
+/* review area style */
+.reviewcontainer {
+    display: flex;
+    margin-left: 20px;
+    padding: 20px;
 }
-
 .reviewcolumn {
     padding: 20px;
 }
-
 .review-column1{
     flex: 20 0 50%;
     padding-left: 20px;
     background-color: antiquewhite;
     border-radius: 10%;
 }
-
 .review-column1 p{
     flex: 0 0 50%;
     padding-left: 20px;
     color: black;
     font-size: 30px;
 }
-
 /* right column */
 .review-column2{
     flex: 0 0 50%;
@@ -225,125 +197,125 @@ li {
 /* Gallery grid container */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a three-column layout */
-    gap: 10px; /* Space between items */
-    margin: 20px; /* Adjust as needed */
+    grid-template-columns: repeat(3, 1fr);
+   /* Creates a three-column layout */
+    gap: 10px;
+   /* Space between items */
+    margin: 20px;
+   /* Adjust as needed */
 }
-
 /* Gallery item styling */
 .gallery-item {
-    overflow: hidden; /* Ensures the content doesn't overflow its box */
+    overflow: hidden;
+   /* Ensures the content doesn't overflow its box */
 }
-
 /* Image styling within gallery items */
 .gallery-item img {
-    width: 100%; /* Makes image fill the container */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%;
+   /* Makes image fill the container */
+    height: auto;
+   /* Maintains aspect ratio */
+    object-fit: cover;
+   /* Ensures the image covers the area without distortion */
 }
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
-    }
+        grid-template-columns: repeat(2, 1fr);
+       /* Two columns for smaller screens */
+   }
 }
-
 @media (max-width: 480px) {
     .gallery {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-    }
+        grid-template-columns: 1fr;
+       /* Single column for very small screens */
+   }
 }
 /* GIFTSHOP */
 .product-label {
-    margin-top: 10px; /* Space above the label */
-    text-align: center; /* Center-align the text */
-    color: antiquewhite; /* Text color */
-    font-weight: bold; /* Make the label text bold */
+    margin-top: 10px;
+   /* Space above the label */
+    text-align: center;
+   /* Center-align the text */
+    color: antiquewhite;
+   /* Text color */
+    font-weight: bold;
+   /* Make the label text bold */
 }
-
 /* Style for 'Add to Cart' buttons */
 .add-to-cart-btn {
     display: block;
-    width: 80%; 
+    width: 80%;
     padding: 10px;
     margin: 10px auto;
-    background-color: antiquewhite; 
+    background-color: antiquewhite;
     color: black;
-    border: none; 
-    cursor: pointer; 
-    border-radius: 5px; 
-    font-size: 1em; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
 }
-
 .add-to-cart-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
+   /* Darker shade on hover */
 }
 /* responsive things! */
-
 @media screen and (max-width: 768px) {
     .container, .second-container, .reviewcontainer {
         flex-direction: column;
-    }
-
+   }
     .column, .reviewcolumn, .review-column1, .review-column2 {
         width: 100%;
         margin: 0;
-    }
-
+   }
     .topnavi li, .topnavi {
         float: none;
         width: auto;
-    }
-
+   }
     .topnavi li {
         display: block;
         text-align: left;
-    }
-
+   }
     .hamburger-menu {
         display: block;
-    }
-
+   }
     .topnavi.responsive {
         position: relative;
-    }
+   }
     .topnavi.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
-    }
+   }
     .topnavi.responsive a {
         float: none;
         display: block;
         text-align: left;
-    }
+   }
 }
-
 /* Adjustments for screens smaller than 600px */
 @media screen and (max-width: 600px) {
     .topnavi li:not(:first-child) {
         display: none;
-    }
+   }
     .topnavi li.icon {
         float: right;
         display: block;
-    }
+   }
 }
-
 /* Additional responsive adjustments for when the hamburger menu is active */
 @media screen and (max-width: 600px) {
     .topnavi.responsive {
         position: relative;
-    }
+   }
     .topnavi.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
-    }
+   }
     .topnavi.responsive li {
         float: none;
         display: block;
         text-align: left;
-    }
+   }
 }
