@@ -3,9 +3,13 @@
 <head>
     <title>Gallery and Maps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map.css">
     <script src="cal.js"></script>
     <script src="hamburger.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <script src="https://kit.fontawesome.com/b7c5aa831b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="map.css">
 </head>
 <body>
 
@@ -20,24 +24,236 @@
         <li class="page"><a href="contact.html">Contact</a></li>
     </ul>
 </div>
-<!-- page title -->
-<div class="container">
-    <div class="pages-title">
-        <p class="pages-titletext">TGT Gallery</p>
+
+<!--section: map and routes-->
+  <div class="wrapper">
+
+    <div class="left">
+      <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9624715307573!2d-6.256352590297591!3d53.34392798223011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9b2dc78edd%3A0x2700fe0d8c716167!2sTrinity%20College%20Dublin!5e0!3m2!1sen!2sie!4v1709405364468!5m2!1sen!2sie" width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-</div>
-    <!-- Begin gallery Section -->
-<div class="gallery">
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <div class="gallery-item"><img src="images/blank.jpeg" alt="Image description"></div>
-    <!-- Add more items as needed -->
-</div>
-<div class="container">
-    <div class="pages-title">
-        <p class="pages-titletext">Maps</p>
+
+    <div class="right-route">
+      <div class="topbar">
+        <p class="topbar-text">Trip Information</p>
+      </div>
+      <div id="top">
+        <img src="img/library.jpg" alt="library image" class="library-image">
+      </div>
+
+      <div id="middle">
+        <div class="middle-title">
+          <div class="choices">
+            <p class="choice-text">Trip Routes<br>Three Choices</p>
+          </div>
+          <div class="time">
+            <p class="time-text">Morning: 10:00-12:00</p>
+            <p class="time-text">Eventing: 16:00-19:00</h6>
+          </div>
+        </div>
+        <div class="three-routes">
+          <a href="#" class="first-route">Library Square, 1937 Reading Room 
+            , Berkeley Library, James Ussher Library, Lecky Library, Library Square
+          </a>
+          <a href="#" class="second-route">Library Square, 1937 Reading Room 
+            , Berkeley Library
+          </a>
+          <a href="#" class="third-route">Library Square, 1937 Reading Room 
+            , Berkeley Library
+          </a>
+        </div>
+      </div>
+
+      <div id="bottom">
+        <button type="submit" class="book-btn">BOOK NOW</button>
+      </div>
     </div>
-</div>
+
+  </div>
+
+  <h2>Photo Gallery</h2>
+  <section class="photo-container">
+    <div class="left-box">
+      <div class="card">
+        <div class="card-library">
+          <img src="img/oldlibrary.jpg" alt="library">
+          <p>Library</p>
+        </div>
+        <div class="content">
+          <p class="introduction">
+            Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
+          </p>
+          <a href="" class="lk">learn more</a><br>
+          <a href="" class="btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-box">
+      <div class="card">
+        <div class="card-square">
+          <img src="img/square.jpg" alt="square">
+          <p>Square</p>
+        </div>
+        <div class="content">
+          <p class="introduction">
+            Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
+          </p>
+          <a href="#" class="lk">learn more</a><br>
+          <a href="" class="btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-box">
+      <div class="card">
+        <div class="card-museum">
+          <img src="img/museum.jpg" alt="museum">
+          <p>Museum</p>
+        </div>
+        <div class="content">
+          <p class="introduction">
+            Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
+          </p>
+          <a href="" class="lk">learn more</a><br>
+          <a href="" class="btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--section: gallery-->
+  <section id="gallery" class="section section-gallery scrollspy">
+    <div class="container">
+      <h4 class="center">
+        
+      </h4>
+      <div class="row">
+        <div class="col s12 m3">
+          <img src="img/1.jpg" alt="" class="materialboxed responsive-img" class="gallery-image">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/2.jpg" alt="" class="materialboxed responsive-img" class="gallery-image">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/3.jpg" alt="" class="materialboxed responsive-img" class="gallery-image">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/4.jpg" alt="" class="materialboxed responsive-img" class="gallery-image">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m3">
+          <img src="img/5.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/6.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/7.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/8.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m3">
+          <img src="img/9.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/10.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/11.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="img/12.jpg" alt="" class="materialboxed responsive-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--section: follow-->
+  <section class="section section-follow black white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow Trinity Ghost Trip</h4>
+          <p>Follow us on social media for special offers</p>
+          <a href="#" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-google-plus fa-4x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-instagram fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--section: video-->
+  <section class="video-container">
+    <header class="showcase">
+      <p>Join in our trip</p>
+    </header>
+    <div class="share">
+      <p>
+        <strong>Share</strong><br>your experience on social media <br>to win award <br>from Trinity Gift Shop
+      </p>
+    </div>
+    <div class="video">
+      <video width="100%" height="100%" controls>
+
+      </video> 
+    </div>
+    <div class="blank">
+    </div>
+  </section>
+
+  <!--section: footer-->
+  <section class="footer">
+    <div class="footer-left">
+      <span>Recieve <br>our <br>Newsletters</span>
+      <div class="about">
+        <a href="#">About us</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="text">
+        Updates on Events
+      </div>
+      <input type="text" placeholder="enter your enmail address">
+      <div class="sign">
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </section>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    //click the burger icon then display the sidebar
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});//use materialize javascript library, initialize the sidenav
+
+    //material boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb,{});
+
+  </script>
+
+</body>
+</html>
